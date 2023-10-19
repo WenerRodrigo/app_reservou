@@ -1,7 +1,7 @@
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Home } from "../screens/Home";
-import { Register } from "../screens/Register";
+import { SignUp } from "../screens/SignUp";
 import theme from "../theme";
 
 
@@ -18,7 +18,7 @@ export const AppRoutes: React.FC = () => {
             }
         }}>
             <Drawer.Screen name="Home" component={Home} />
-            <Drawer.Screen name="Register" component={Register} />
+            <Drawer.Screen name="SignUp" component={SignUp} />
         </Drawer.Navigator>
     );
 }
