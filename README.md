@@ -30,17 +30,11 @@ yarn start
 # OU
 npm start
 
-![tela_menu](https://github.com/WenerRodrigo/app_reservou/assets/106413124/45d9afa5-034e-4197-9f1a-29fd0ef31872)
+![tela_menu](https://github.com/WenerRodrigo/app_reservou/assets/106413124/45d9afa5-034e-4197-9f1a-29fd0ef31872)![tela_menu_validacao](https://github.com/WenerRodrigo/app_reservou/assets/106413124/8b508aeb-78b8-4f26-b783-a7550ba5691e)
 
-![tela_menu_validacao](https://github.com/WenerRodrigo/app_reservou/assets/106413124/8b508aeb-78b8-4f26-b783-a7550ba5691e)
+![tela_home](https://github.com/WenerRodrigo/app_reservou/assets/106413124/2802ab8b-cef3-4553-bf37-f72a9cec52db)![tela_cadastro](https://github.com/WenerRodrigo/app_reservou/assets/106413124/1d049e70-7826-499f-997f-e15a28a83706)
 
-![tela_home](https://github.com/WenerRodrigo/app_reservou/assets/106413124/2802ab8b-cef3-4553-bf37-f72a9cec52db)
-
-![tela_cadastro](https://github.com/WenerRodrigo/app_reservou/assets/106413124/1d049e70-7826-499f-997f-e15a28a83706)
-
-![tela_cadastro_validacao](https://github.com/WenerRodrigo/app_reservou/assets/106413124/ae9ae2fb-5507-4c9a-b720-1fe13ae77388)
-
-![tela_loading](https://github.com/WenerRodrigo/app_reservou/assets/106413124/a152dc4d-dd1d-4683-8324-114dc4fae660)
+![tela_cadastro_validacao](https://github.com/WenerRodrigo/app_reservou/assets/106413124/ae9ae2fb-5507-4c9a-b720-1fe13ae77388)![tela_loading](https://github.com/WenerRodrigo/app_reservou/assets/106413124/a152dc4d-dd1d-4683-8324-114dc4fae660)
 
 
 
