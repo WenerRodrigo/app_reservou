@@ -2,7 +2,6 @@
 import * as S from "./styles";
 import { Image, ScrollView, TouchableOpacity, View } from 'react-native';
 import { Button } from "../../components/Button";
-import { useAuth } from "../../hooks/useAuth";
 import { Input } from "../../components/Input";
 import { getBottomSpace } from "react-native-iphone-x-helper";
 import { Feather } from "@expo/vector-icons";
@@ -13,8 +12,15 @@ import { Controller, useForm } from 'react-hook-form';
 import * as yup from 'yup';
 
 
+type IFormData = {
+    name: string;
+    email: string;
+    phone: string;
+    password: string;
+    confirmPassword: string;
+}
+
 export function SignUp() {
-    const { signIn } = useAuth();
     const navigation = useNavigation();
 
     const schema = yup.object().shape({
@@ -31,6 +37,12 @@ export function SignUp() {
 
     const handleOnBack = () => {
         navigation.goBack()
+    }
+
+    const handleFormSubmit = (data: IFormData) => {
+        console.log('Dados do formulário:', data);
+
+        handleOnBack();
     }
 
 
@@ -127,11 +139,11 @@ export function SignUp() {
                             render={({ field: { onChange, value } }) => (
                                 <Input
                                     placeholder="Senha"
-                                    secureTextEntry
                                     autoCorrect={false}
                                     autoCapitalize="none"
                                     value={value}
                                     onChangeText={onChange}
+                                    type="password"
                                     error={errors.password && errors.password.message}
                                 />
                             )}
@@ -147,11 +159,11 @@ export function SignUp() {
                             render={({ field: { onChange, value } }) => (
                                 <Input
                                     placeholder="Confirmar Senha"
-                                    secureTextEntry
                                     autoCorrect={false}
                                     autoCapitalize="none"
                                     value={value}
                                     onChangeText={onChange}
+                                    type="password"
                                     error={errors.confirmPassword && errors.confirmPassword.message}
                                 />
                             )}
@@ -159,7 +171,7 @@ export function SignUp() {
                     </S.WapperInput>
                 </View>
                 <S.BoxButtom>
-                    <Button title="Criar Conta" onPress={handleSubmit(signIn)} />
+                    <Button title="Criar Conta" onPress={handleSubmit(handleFormSubmit)} />
                 </S.BoxButtom>
             </ScrollView>
         </S.Container>
