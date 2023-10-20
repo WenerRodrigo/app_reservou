@@ -8,9 +8,7 @@ type IProps = {
 };
 
 export const Container = styled(TouchableOpacity)<IProps>`
-  flex: 1;
   height: 60px;
-  max-height: 60px;
   width: 100%;
   background-color: ${({ theme, type }) => type === "primary" ? theme.colors.yellow : theme.colors.white};
   border-radius: 10px;

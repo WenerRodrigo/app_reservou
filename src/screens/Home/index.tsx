@@ -1,7 +1,7 @@
 import { useAuth } from '../../hooks/useAuth';
 import theme from '../../theme';
 import * as S from './styles';
-import { Image, Button, View } from 'react-native'
+import { Image, Button } from 'react-native'
 
 export function Home() {
     const { signOut } = useAuth();
