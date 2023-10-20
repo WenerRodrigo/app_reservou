@@ -7,7 +7,7 @@ import { Routes } from './src/routes';
 import { AuthProvider } from './src/contexts/AuthContext';
 
 export default function App() {
-  const [FontsLoader] = useFonts([Roboto_400Regular, Roboto_700Bold]);
+  const [FontsLoader] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
   return (
     <AuthProvider>
